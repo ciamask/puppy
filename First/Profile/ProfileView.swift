@@ -8,8 +8,8 @@
 import UIKit
 
 class ProfileView: UIView {
-    
-    var profileVC: ProfileVC?
+        
+    var onFollowMe: ((String) -> Void)?
     
     let profileImage: UIImageView = {
         let imageView = UIImageView()
@@ -80,7 +80,7 @@ class ProfileView: UIView {
     }
     
     @objc func handleFollowMe() {
-        profileVC?.gotoEmail()
+        onFollowMe?("Shreeya")
     }
     
     required init?(coder: NSCoder) {

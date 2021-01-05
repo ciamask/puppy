@@ -15,8 +15,17 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         title = "GIRL"
-        baseView.profileVC = self
+        observeEvents()
 //        navigationController?.isNavigationBarHidden = true
+    }
+    
+    private func observeEvents() {
+        baseView.onFollowMe = { [weak self] (name) in
+            guard let self = self else { return }
+            print("Name:", name)
+//            print("Name: \(name)")
+            self.gotoEmail()
+        }
     }
     
     func gotoEmail() {
@@ -27,6 +36,10 @@ class ProfileVC: UIViewController {
     
     override func loadView() {
         view = baseView
+    }
+    
+    deinit {
+        print("Profile VC is out of memory...")
     }
     
 }

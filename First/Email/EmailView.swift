@@ -9,7 +9,7 @@ import UIKit
 
 class EmailView: UIView {
     
-    var emailVC: EmailVC?
+    weak var emailVC: EmailVC?
     
     let emailTextbox: UITextField = {
         let emailBox = UITextField()
@@ -136,7 +136,7 @@ class EmailView: UIView {
     }
     
     @objc func back() {
-//        navigationController?.popViewController(animated: true)
+        emailVC?.navigationController?.popViewController(animated: true)
     }
     
     private func setupUI() {
