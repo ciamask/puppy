@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0308AF1E25A2FD610005925A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF1D25A2FD610005925A /* AppDelegate.swift */; };
 		0308AF2025A2FD610005925A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF1F25A2FD610005925A /* SceneDelegate.swift */; };
-		0308AF2225A2FD610005925A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF2125A2FD610005925A /* ViewController.swift */; };
-		0308AF2525A2FD610005925A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0308AF2325A2FD610005925A /* Main.storyboard */; };
+		0308AF2225A2FD610005925A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF2125A2FD610005925A /* ProfileVC.swift */; };
 		0308AF2725A2FD620005925A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0308AF2625A2FD620005925A /* Assets.xcassets */; };
 		0308AF2A25A2FD620005925A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0308AF2825A2FD620005925A /* LaunchScreen.storyboard */; };
+		0308AF3825A31C310005925A /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF3725A31C310005925A /* EmailVC.swift */; };
+		0308AF3E25A32D900005925A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF3D25A32D900005925A /* ProfileView.swift */; };
+		0308AF4125A40E210005925A /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF4025A40E210005925A /* EmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0308AF1A25A2FD610005925A /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0308AF1D25A2FD610005925A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0308AF1F25A2FD610005925A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0308AF2125A2FD610005925A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0308AF2425A2FD610005925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0308AF2125A2FD610005925A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		0308AF2625A2FD620005925A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0308AF2925A2FD620005925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0308AF2B25A2FD620005925A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0308AF3725A31C310005925A /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
+		0308AF3D25A32D900005925A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0308AF4025A40E210005925A /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		0308AF1C25A2FD610005925A /* First */ = {
 			isa = PBXGroup;
 			children = (
+				0308AF3B25A32D580005925A /* Email */,
+				0308AF3A25A32D430005925A /* Profile */,
 				0308AF1D25A2FD610005925A /* AppDelegate.swift */,
 				0308AF1F25A2FD610005925A /* SceneDelegate.swift */,
-				0308AF2125A2FD610005925A /* ViewController.swift */,
-				0308AF2325A2FD610005925A /* Main.storyboard */,
 				0308AF2625A2FD620005925A /* Assets.xcassets */,
 				0308AF2825A2FD620005925A /* LaunchScreen.storyboard */,
 				0308AF2B25A2FD620005925A /* Info.plist */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		0308AF3A25A32D430005925A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0308AF2125A2FD610005925A /* ProfileVC.swift */,
+				0308AF3D25A32D900005925A /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0308AF3B25A32D580005925A /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				0308AF3725A31C310005925A /* EmailVC.swift */,
+				0308AF4025A40E210005925A /* EmailView.swift */,
+			);
+			path = Email;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +148,6 @@
 			files = (
 				0308AF2A25A2FD620005925A /* LaunchScreen.storyboard in Resources */,
 				0308AF2725A2FD620005925A /* Assets.xcassets in Resources */,
-				0308AF2525A2FD610005925A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +158,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0308AF2225A2FD610005925A /* ViewController.swift in Sources */,
+				0308AF2225A2FD610005925A /* ProfileVC.swift in Sources */,
+				0308AF3825A31C310005925A /* EmailVC.swift in Sources */,
+				0308AF3E25A32D900005925A /* ProfileView.swift in Sources */,
 				0308AF1E25A2FD610005925A /* AppDelegate.swift in Sources */,
 				0308AF2025A2FD610005925A /* SceneDelegate.swift in Sources */,
+				0308AF4125A40E210005925A /* EmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0308AF2325A2FD610005925A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0308AF2425A2FD610005925A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0308AF2825A2FD620005925A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PV9SRDAQY6;
 				INFOPLIST_FILE = First/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PV9SRDAQY6;
 				INFOPLIST_FILE = First/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
