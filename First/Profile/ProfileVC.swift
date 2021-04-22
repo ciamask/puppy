@@ -17,7 +17,7 @@ class ProfileVC: UIViewController {
         title = "GIRL"
         observeEvents()
 //        navigationController?.isNavigationBarHidden = true
-    }
+         }
     
     private func observeEvents() {
         baseView.onFollowMe = { [weak self] (name) in

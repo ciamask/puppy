@@ -9,7 +9,7 @@ import UIKit
 
 class EmailView: UIView {
     
-    weak var emailVC: EmailVC?
+    weak var emailVC: EmailVC? //passing value not prefred way
     
     let emailTextbox: UITextField = {
         let emailBox = UITextField()
@@ -19,6 +19,7 @@ class EmailView: UIView {
         emailBox.font = UIFont.systemFont(ofSize: 22)
         emailBox.borderStyle = .roundedRect
         emailBox.addTarget(self, action: #selector(handleEmailChanges), for: .editingChanged)
+        emailBox.keyboardType = .emailAddress
         return emailBox
     }()
     
@@ -42,6 +43,7 @@ class EmailView: UIView {
         passBox.placeholder = "PASSWORD"
         passBox.font = UIFont.systemFont(ofSize: 22)
         passBox.addTarget(self, action: #selector(handlepasswordChanges), for: .editingChanged)
+        passBox.isSecureTextEntry = true
         return passBox
     }()
     

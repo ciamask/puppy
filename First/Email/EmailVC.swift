@@ -14,7 +14,7 @@ class EmailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray
-        emailView.emailVC = self
+        emailView.emailVC = self   
         title = "Form"
     }
     

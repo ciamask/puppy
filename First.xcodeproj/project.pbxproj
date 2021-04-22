@@ -15,6 +15,10 @@
 		0308AF3825A31C310005925A /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF3725A31C310005925A /* EmailVC.swift */; };
 		0308AF3E25A32D900005925A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF3D25A32D900005925A /* ProfileView.swift */; };
 		0308AF4125A40E210005925A /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308AF4025A40E210005925A /* EmailView.swift */; };
+		035A38FF25F0B7F7003D1216 /* viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A38FE25F0B7F7003D1216 /* viewcontroller.swift */; };
+		035A390225F0B913003D1216 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A390125F0B913003D1216 /* Validator.swift */; };
+		035A390525F0B983003D1216 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A390425F0B983003D1216 /* FieldValidator.swift */; };
+		035A390A25F0BB1F003D1216 /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A390925F0BB1F003D1216 /* view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		0308AF3725A31C310005925A /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
 		0308AF3D25A32D900005925A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0308AF4025A40E210005925A /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		035A38FE25F0B7F7003D1216 /* viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewcontroller.swift; sourceTree = "<group>"; };
+		035A390125F0B913003D1216 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		035A390425F0B983003D1216 /* FieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
+		035A390925F0BB1F003D1216 /* view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,10 @@
 				0308AF2625A2FD620005925A /* Assets.xcassets */,
 				0308AF2825A2FD620005925A /* LaunchScreen.storyboard */,
 				0308AF2B25A2FD620005925A /* Info.plist */,
+				035A38FE25F0B7F7003D1216 /* viewcontroller.swift */,
+				035A390125F0B913003D1216 /* Validator.swift */,
+				035A390425F0B983003D1216 /* FieldValidator.swift */,
+				035A390925F0BB1F003D1216 /* view.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -158,11 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035A390525F0B983003D1216 /* FieldValidator.swift in Sources */,
+				035A390225F0B913003D1216 /* Validator.swift in Sources */,
 				0308AF2225A2FD610005925A /* ProfileVC.swift in Sources */,
+				035A38FF25F0B7F7003D1216 /* viewcontroller.swift in Sources */,
 				0308AF3825A31C310005925A /* EmailVC.swift in Sources */,
 				0308AF3E25A32D900005925A /* ProfileView.swift in Sources */,
 				0308AF1E25A2FD610005925A /* AppDelegate.swift in Sources */,
 				0308AF2025A2FD610005925A /* SceneDelegate.swift in Sources */,
+				035A390A25F0BB1F003D1216 /* view.swift in Sources */,
 				0308AF4125A40E210005925A /* EmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
